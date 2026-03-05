@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Detail | Cheng Cyber</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Khmer:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --bg: #f6f8fd; 
+            --surface: #ffffff; 
+            --border: #e0e5f0; 
+            --accent: #dc2626; /* ប្តូរទៅពណ៌ក្រហមសម្រាប់ Security */
+            --accent2: #ef4444; 
+            --text: #0f1729; 
+            --muted: #64748b; 
+            --font: 'Plus Jakarta Sans', 'Noto Sans Khmer', sans-serif; 
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.8; }
+        
+        /* Nav */
+        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(246, 248, 253, 0.88); backdrop-filter: blur(24px); border-bottom: 1px solid var(--border); display: flex; align-items: center; padding: 0 2.5rem; height: 68px; }
+        .logo { text-decoration: none; color: var(--text); font-weight: 800; font-size: 1.15rem; }
+
+        .container { max-width: 850px; margin: 120px auto 60px; padding: 0 1.5rem; }
+        .back-btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--accent); font-weight: 700; margin-bottom: 2rem; transition: 0.2s; }
+        .back-btn:hover { transform: translateX(-5px); }
+
+        /* Header */
+        .post-category { display: inline-block; background: rgba(220, 38, 38, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1rem; }
+        h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; margin-bottom: 1rem; }
+
+        .featured-image { width: 100%; height: 400px; border-radius: 24px; background: linear-gradient(135deg, #fdeeee, #f8e2e2); display: flex; align-items: center; justify-content: center; font-size: 6rem; margin: 2.5rem 0; border: 1.5px solid var(--border); }
+
+        /* Article Content */
+        .post-content h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text); border-left: 4px solid var(--accent); padding-left: 15px; }
+        .post-content p { margin-bottom: 1.2rem; color: #334155; text-align: justify; }
+        .post-content ul { margin-bottom: 1.5rem; padding-left: 20px; }
+        .post-content li { margin-bottom: 0.5rem; color: #334155; }
+
+        .summary-box { background: white; padding: 2rem; border-radius: 20px; border: 1px solid var(--border); margin-top: 3rem; }
+
+        footer { background: var(--text); padding: 2.5rem; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.8rem; margin-top: 4rem; }
+        
+        @media (max-width: 600px) { .featured-image { height: 250px; font-size: 4rem; } nav { padding: 0 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Cheng Cyber</a>
+    </nav>
+
+    <main class="container">
+        <a href="index.html#news" class="back-btn">← ត្រឡប់ក្រោយ</a>
+        
+        <header>
+            <span class="post-category">Security</span>
+            <h1>Cybersecurity in Cambodian Universities</h1>
+            <div style="color:var(--muted); font-size:0.9rem;">📅 February 20, 2025 | By Cheng Cyber Content Team</div>
+        </header>
+
+        <div class="featured-image">🛡️</div>
+
+        <article class="post-content">
+            <p>ក្នុងយុគសម័យឌីជីថល សន្តិសុខសាយប័រ (Cybersecurity) បានក្លាយជាសសរស្តម្ភដ៏សំខាន់បំផុតមួយសម្រាប់គ្រឹះស្ថានឧត្តមសិក្សានៅកម្ពុជា ដើម្បីការពារទិន្នន័យស្រាវជ្រាវ និងព័ត៌មានឯកជនរបស់និស្សិតពីការវាយប្រហារផ្សេងៗ។</p>
+
+            <h2>1. Strengthening Academic Infrastructure</h2>
+            <p>Cambodian universities are increasingly adopting robust cybersecurity frameworks to protect their internal networks. This involves the implementation of multi-factor authentication (MFA) and advanced firewalls to safeguard against phishing and ransomware attacks that target educational databases.</p>
+            <ul>
+                <li>Implementation of secure server protocols.</li>
+                <li>Regular system audits to identify digital vulnerabilities.</li>
+                <li>Deployment of AI-driven threat detection tools.</li>
+            </ul>
+
+            <h2>2. Cybersecurity Curriculum & Training</h2>
+            <p>Major institutions are now integrating specialized cybersecurity courses into their IT degrees. These programs focus on:</p>
+            <ul>
+                <li><strong>Ethical Hacking:</strong> Teaching students how to identify vulnerabilities before they are exploited.</li>
+                <li><strong>Network Security:</strong> Building resilient systems for government and private industries.</li>
+                <li><strong>Digital Safety Awareness:</strong> Training non-IT students and staff to recognize social engineering threats.</li>
+            </ul>
+
+            <h2>3. Collaboration with Global Tech Leaders</h2>
+            <p>Partnerships with international technology firms and cybersecurity organizations are providing students with access to industry-standard certifications and real-world simulation labs, closing the skill gap in the local market and preparing graduates for high-demand roles.</p>
+
+            <h2>4. Policy and Student Privacy</h2>
+            <p>With the rise of online learning, universities are developing stricter privacy policies to protect student identities. These policies ensure that digital footprints are minimized and that personal data is encrypted and stored according to national digital safety standards.</p>
+
+            <div class="summary-box">
+                <h3 style="margin-bottom: 10px;">Summary</h3>
+                <p style="margin-bottom: 0;">By prioritizing cybersecurity in education, Cambodia is building a digital-ready workforce capable of defending the nation’s growing digital infrastructure and fostering a safe digital environment for all students.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>© 2025 Cheng Cyber. All rights reserved.</footer>
+</body>
+</html>

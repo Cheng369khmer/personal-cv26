@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Detail | Cheng Cyber</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Khmer:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --bg: #f6f8fd; 
+            --surface: #ffffff; 
+            --border: #e0e5f0; 
+            --accent: #2563eb; 
+            --accent2: #7c3aed; 
+            --text: #0f1729; 
+            --muted: #64748b; 
+            --font: 'Plus Jakarta Sans', 'Noto Sans Khmer', sans-serif; 
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.8; }
+        
+        /* Nav */
+        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(246, 248, 253, 0.88); backdrop-filter: blur(24px); border-bottom: 1px solid var(--border); display: flex; align-items: center; padding: 0 2.5rem; height: 68px; }
+        .logo { text-decoration: none; color: var(--text); font-weight: 800; font-size: 1.15rem; }
+
+        .container { max-width: 850px; margin: 120px auto 60px; padding: 0 1.5rem; }
+        .back-btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--accent); font-weight: 700; margin-bottom: 2rem; transition: 0.2s; }
+        .back-btn:hover { transform: translateX(-5px); }
+
+        /* Header */
+        .post-category { display: inline-block; background: rgba(37, 99, 235, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1rem; }
+        h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; margin-bottom: 1rem; }
+
+        .featured-image { width: 100%; height: 400px; border-radius: 24px; background: linear-gradient(135deg, #eef1fb, #e2e8f8); display: flex; align-items: center; justify-content: center; font-size: 6rem; margin: 2.5rem 0; border: 1.5px solid var(--border); }
+
+        /* Article Content */
+        .post-content h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text); border-left: 4px solid var(--accent); padding-left: 15px; }
+        .post-content p { margin-bottom: 1.2rem; color: #334155; text-align: justify; }
+        .post-content ul { margin-bottom: 1.5rem; padding-left: 20px; }
+        .post-content li { margin-bottom: 0.5rem; color: #334155; }
+
+        .summary-box { background: white; padding: 2rem; border-radius: 20px; border: 1px solid var(--border); margin-top: 3rem; }
+
+        footer { background: var(--text); padding: 2.5rem; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.8rem; margin-top: 4rem; }
+        
+        @media (max-width: 600px) { .featured-image { height: 250px; font-size: 4rem; } nav { padding: 0 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Cheng Cyber</a>
+    </nav>
+
+    <main class="container">
+        <a href="index.html#news" class="back-btn">← ត្រឡប់ក្រោយ</a>
+        
+        <header>
+            <span class="post-category">AI Strategy</span>
+            <h1>AI Transforming Cambodia's Digital Economy</h1>
+            <div style="color:var(--muted); font-size:0.9rem;">📅 March 15, 2025 | By Cheng Cyber Content Team</div>
+        </header>
+
+        <div class="featured-image">🤖</div>
+
+        <article class="post-content">
+            <p>បច្ចេកវិទ្យាបញ្ញាសិប្បនិម្មិត (AI) កំពុងក្លាយជាកាតាលីករដ៏សំខាន់សម្រាប់ការផ្លាស់ប្តូរឌីជីថលទាំងមូលនៅក្នុងប្រទេសកម្ពុជា។ តាមរយៈការរួមបញ្ចូលគ្នានៃទស្សនវិស័យគោលនយោបាយ ការអភិវឌ្ឍកម្លាំងពលកម្ម ការវិនិយោគលើហេដ្ឋារចនាសម្ព័ន្ធ និងការត្រួតពិនិត្យក្រមសីលធម៌ ប្រទេសកម្ពុជាកំពុងរៀបចំខ្លួនដើម្បីឈានទៅមុខក្នុងបដិវត្តន៍ឧស្សាហកម្មទី៤។</p>
+
+            <h2>1. Strategic Vision and National AI Policy</h2>
+            <p>Cambodia is actively integrating artificial intelligence (AI) into its digital economy as part of a broader national digital transformation agenda. Central to this effort is the <strong>National Artificial Intelligence Strategy</strong>, spearheaded by the Ministry of Post and Telecommunications (MPTC).</p>
+            <ul>
+                <li>Collaborative formulation involving local policymakers and international experts.</li>
+                <li>Alignment with Cambodia Digital Economy and Society Policy Framework 2021–2035.</li>
+                <li>Nationwide consultations from government, academia, and civil society.</li>
+            </ul>
+
+            <h2>2. AI in Governance and Business Efficiency</h2>
+            <p>AI deployment in Cambodia targets both private sector competitiveness and public sector efficiency:</p>
+            <ul>
+                <li><strong>Private sector:</strong> Automated processes, data-driven decision-making, and operational optimization.</li>
+                <li><strong>Public sector:</strong> Digital service delivery via AI-enhanced platforms reduces bureaucracy and improves transparency.</li>
+            </ul>
+            <p>The Online Business Registration (OBR) system demonstrates tangible digital adoption, with over 42,000 registered enterprises as of late 2024.</p>
+
+            <h2>3. Workforce and Skills Development</h2>
+            <p>Cambodia's AI-driven transformation necessitates workforce upskilling. Automation in sectors like manufacturing, logistics, and retail is transforming labor demand. There is a strong curricular emphasis on STEM education and soft skills to ensure adaptability in the AI economy.</p>
+
+            <h2>4. Ethical and Inclusive Deployment</h2>
+            <p>Cambodia emphasizes ethical AI adoption through frameworks informed by UNESCO’s Readiness Assessment Methodology. This includes assessing legal, societal, and infrastructure readiness to minimize risks from technological displacement, bias, and inequity.</p>
+
+            <div class="summary-box">
+                <h3 style="margin-bottom: 10px;">Summary</h3>
+                <p style="margin-bottom: 0;">Cambodia envisions a smart, inclusive, and resilient economy where AI enhances governance transparency, drives private sector innovation, and supports equitable socio-economic development.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>© 2025 Cheng Cyber. All rights reserved.</footer>
+</body>
+</html>
