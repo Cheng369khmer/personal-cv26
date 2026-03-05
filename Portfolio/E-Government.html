@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Government Detail | Cheng Cyber</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Khmer:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --bg: #f6f8fd; 
+            --surface: #ffffff; 
+            --border: #e0e5f0; 
+            --accent: #10b981; /* ពណ៌បៃតងសម្រាប់ E-Gov */
+            --accent2: #7c3aed; 
+            --text: #0f1729; 
+            --muted: #64748b; 
+            --font: 'Plus Jakarta Sans', 'Noto Sans Khmer', sans-serif; 
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.8; }
+        
+        /* Nav */
+        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(246, 248, 253, 0.88); backdrop-filter: blur(24px); border-bottom: 1px solid var(--border); display: flex; align-items: center; padding: 0 2.5rem; height: 68px; }
+        .logo { text-decoration: none; color: var(--text); font-weight: 800; font-size: 1.15rem; }
+
+        .container { max-width: 850px; margin: 120px auto 60px; padding: 0 1.5rem; }
+        .back-btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--accent); font-weight: 700; margin-bottom: 2rem; transition: 0.2s; }
+        .back-btn:hover { transform: translateX(-5px); }
+
+        /* Header */
+        .post-category { display: inline-block; background: rgba(16, 185, 129, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1rem; }
+        h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; margin-bottom: 1rem; }
+
+        .featured-image { width: 100%; height: 400px; border-radius: 24px; background: linear-gradient(135deg, #eefbf4, #e2f8ee); display: flex; align-items: center; justify-content: center; font-size: 6rem; margin: 2.5rem 0; border: 1.5px solid var(--border); }
+
+        /* Article Content */
+        .post-content h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text); border-left: 4px solid var(--accent); padding-left: 15px; }
+        .post-content p { margin-bottom: 1.2rem; color: #334155; text-align: justify; }
+        .post-content ul { margin-bottom: 1.5rem; padding-left: 20px; }
+        .post-content li { margin-bottom: 0.5rem; color: #334155; }
+        .post-content strong { color: var(--text); }
+
+        .summary-box { background: white; padding: 2rem; border-radius: 20px; border: 1px solid var(--border); margin-top: 3rem; }
+
+        footer { background: var(--text); padding: 2.5rem; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.8rem; margin-top: 4rem; }
+        
+        @media (max-width: 600px) { .featured-image { height: 250px; font-size: 4rem; } nav { padding: 0 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Cheng Cyber</a>
+    </nav>
+
+    <main class="container">
+        <a href="index.html#news" class="back-btn">← ត្រឡប់ក្រោយ</a>
+        
+        <header>
+            <span class="post-category">Public Service</span>
+            <h1>Cambodia's Digital Government Policy 2022–2035</h1>
+            <div style="color:var(--muted); font-size:0.9rem;">📅 May 15, 2025 | By Cheng Cyber Content Team</div>
+        </header>
+
+        <div class="featured-image">🏛️</div>
+
+        <article class="post-content">
+            <p>កម្ពុជាកំពុងអនុវត្ត <strong>គោលនយោបាយរដ្ឋាភិបាលឌីជីថលកម្ពុជា ២០២២-២០៣៥</strong> ដែលជាផែនទីបង្ហាញផ្លូវរយៈពេលវែង ដើម្បីផ្លាស់ប្តូររដ្ឋបាលសាធារណៈទៅជាប្រព័ន្ធអេកូឡូស៊ី "ឆ្លាតវៃ" ដែលមានតម្លាភាព ប្រសិទ្ធភាព និងផ្អែកលើប្រជាពលរដ្ឋជាមជ្ឈមណ្ឌល។</p>
+
+            <h2>1. Core Pillars & Infrastructure</h2>
+            <p>ដើម្បីសម្រេចបាននូវគោលដៅនេះ រដ្ឋាភិបាលបានបង្កើតហេដ្ឋារចនាសម្ព័ន្ធសំខាន់ៗដូចជា៖</p>
+            <ul>
+                <li><strong>Cambodia Data Exchange (CamDX):</strong> ជាប្រព័ន្ធផ្លាស់ប្តូរទិន្នន័យរួមដែលអនុញ្ញាតឱ្យស្ថាប័នរដ្ឋ និងឯកជនចែករំលែកទិន្នន័យគ្នាដោយសុវត្ថិភាព។ គិតត្រឹមដើមឆ្នាំ២០២៦ វាមានសមាជិកឯកជនជាង ៥៣ រួមទាំងធនាគារធំៗផងដែរ។</li>
+                <li><strong>Verify.gov.kh:</strong> វេទិកាផ្ទៀងផ្ទាត់ឯកសារជាតិដែលប្រើប្រាស់បច្ចេកវិទ្យា <strong>Blockchain</strong> ដើម្បីបញ្ជាក់ភាពត្រឹមត្រូវនៃឯកសារផ្លូវការ។</li>
+                <li><strong>National Data Center:</strong> មជ្ឈមណ្ឌលទិន្នន័យជាតិដែលគ្រោងនឹងដោះស្រាយការបែកបាក់ទិន្នន័យ និងផ្តល់ធនធានកុំព្យូទ័រប្រកបដោយសុវត្ថិភាពសម្រាប់គ្រប់ក្រសួង។</li>
+                <li><strong>5G Readiness:</strong> សេវា 5G ពាណិជ្ជកម្មគ្រោងនឹងដាក់ឱ្យដំណើរការនៅឆ្នាំ <strong>២០២៦</strong> ដើម្បីផ្តល់ហេដ្ឋារចនាសម្ព័ន្ធល្បឿនលឿនសម្រាប់ Smart Cities។</li>
+            </ul>
+
+            <h2>2. Digital Services (G2C & G2B)</h2>
+            <p>សេវាឌីជីថលកំពុងជួយសម្រួលដល់ការរស់នៅ និងការធ្វើអាជីវកម្ម៖</p>
+            <ul>
+                <li><strong>Online Business Registration:</strong> តាមរយៈ CamDX សហគ្រិនអាចចុះបញ្ជីក្រុមហ៊ុនជាមួយក្រសួងពាក់ព័ន្ធទាំងអស់ក្នុងពេលតែមួយ។</li>
+                <li><strong>DGSuperApp:</strong> "Super App" ដំបូងរបស់រដ្ឋាភិបាលកម្ពុជាសម្រាប់សេវាសាធារណៈនឹងបង្ហាញខ្លួននៅឆ្នាំ <strong>២០២៦</strong>។</li>
+                <li><strong>CamDigiKey:</strong> សេវា e-KYC សុវត្ថិភាពដែលអនុញ្ញាតឱ្យអ្នកប្រើប្រាស់បញ្ជាក់អត្តសញ្ញាណសម្រាប់ការប្រើប្រាស់សេវាកម្មឌីជីថលនានា។</li>
+            </ul>
+
+            <h2>3. Key Strategies & Targets</h2>
+            <p>រដ្ឋាភិបាលបានកំណត់គោលដៅច្បាស់លាស់សម្រាប់ពេលអនាគត៖</p>
+            <ul>
+                <li><strong>Digital Infrastructure:</strong> ពង្រីកការភ្ជាប់ទំនាក់ទំនង ការទូទាត់ឌីជីថល និងសន្តិសុខសាយប័រ។</li>
+                <li><strong>Capacity Building:</strong> បំពាក់ជំនាញឌីជីថលដល់មន្ត្រីរាជការ និងលើកកម្ពស់ចំណេះដឹងឌីជីថលដល់សាធារណជន។</li>
+                <li><strong>Target 2030:</strong> សម្រេចបាននូវស្ថានភាព "ចំណូលមធ្យមកម្រិតខ្ពស់" តាមរយៈការផ្លាស់ប្តូរឌីជីថល។</li>
+                <li><strong>Target 2035:</strong> សម្រេចបានរដ្ឋាភិបាលឌីជីថលឆ្លាតវៃពេញលេញ ជាមួយនឹងសេវាកម្មដែលគ្មានថ្នេរ និងសុវត្ថិភាព។</li>
+            </ul>
+
+            <div class="summary-box">
+                <h3 style="margin-bottom: 10px;">Summary</h3>
+                <p style="margin-bottom: 0;">Cambodia is building a foundation for a smart digital government aimed at driving socio-economic development, enhancing transparency, and delivering user-centric public services for all citizens.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>© 2025 Cheng Cyber. All rights reserved.</footer>
+</body>
+</html>

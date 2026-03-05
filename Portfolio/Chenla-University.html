@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Tour Detail | Chenla University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Khmer:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --bg: #f6f8fd; 
+            --surface: #ffffff; 
+            --border: #e0e5f0; 
+            --accent: #2563eb; /* Blue for Education */
+            --accent2: #7c3aed; 
+            --text: #0f1729; 
+            --muted: #64748b; 
+            --font: 'Plus Jakarta Sans', 'Noto Sans Khmer', sans-serif; 
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.8; }
+        
+        /* Nav */
+        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(246, 248, 253, 0.88); backdrop-filter: blur(24px); border-bottom: 1px solid var(--border); display: flex; align-items: center; padding: 0 2.5rem; height: 68px; }
+        .logo { text-decoration: none; color: var(--text); font-weight: 800; font-size: 1.15rem; }
+
+        .container { max-width: 850px; margin: 120px auto 60px; padding: 0 1.5rem; }
+        .back-btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--accent); font-weight: 700; margin-bottom: 2rem; transition: 0.2s; }
+        .back-btn:hover { transform: translateX(-5px); }
+
+        /* Header */
+        .post-category { display: inline-block; background: rgba(37, 99, 235, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1rem; }
+        h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); line-height: 1.4; margin-bottom: 1rem; color: var(--text); }
+
+        .featured-image { width: 100%; height: 400px; border-radius: 24px; background: linear-gradient(135deg, #eef1fb, #e2e8f8); display: flex; align-items: center; justify-content: center; font-size: 6rem; margin: 2.5rem 0; border: 1.5px solid var(--border); overflow: hidden; }
+        .featured-image img { width: 100%; height: 100%; object-fit: cover; } /* For actual image */
+
+        /* Article Content */
+        .post-content h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text); border-left: 4px solid var(--accent); padding-left: 15px; }
+        .post-content p { margin-bottom: 1.2rem; color: #334155; text-align: justify; }
+        .post-content ul { margin-bottom: 1.5rem; padding-left: 20px; }
+        .post-content li { margin-bottom: 0.5rem; color: #334155; }
+        .post-content strong { color: var(--text); }
+
+        /* === NEW: Photo Grid Styles === */
+        .photo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 2.5rem 0; }
+        .grid-item { background: var(--border); border-radius: 16px; overflow: hidden; height: 250px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--muted); }
+        .grid-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+        .grid-item:hover img { transform: scale(1.05); }
+
+        /* Summary Box */
+        .summary-box { background: white; padding: 2rem; border-radius: 20px; border: 1px solid var(--border); margin-top: 3rem; }
+
+        footer { background: var(--text); padding: 2.5rem; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.8rem; margin-top: 4rem; }
+        
+        /* Mobile Responsive */
+        @media (max-width: 600px) { .featured-image { height: 250px; font-size: 4rem; } nav { padding: 0 1rem; } .photo-grid { grid-template-columns: 1fr; } .grid-item { height: 200px; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Cheng Cyber</a>
+    </nav>
+
+    <main class="container">
+        <a href="index.html#news" class="back-btn">← ត្រឡប់ក្រោយ</a>
+        
+        <header>
+            <span class="post-category">International Study Tour</span>
+            <h1>អបអរសាទរដំណើរទស្សនកិច្ចសិក្សាទៅកាន់សាកលវិទ្យាល័យ TAN TAO នៃសាធារណរដ្ឋសង្គមនិយមវៀតណាម</h1>
+            <div style="color:var(--muted); font-size:0.9rem;">📅 March 05, 2026 | Chenla University News</div>
+        </header>
+        
+        <div class="featured-image">
+    <img src="image/Chenlauniver-nwe2026.jpg" alt="Study Tour to Tan Tao University">
+        </div>
+
+        <article class="post-content">
+            <p>ថ្នាក់ដឹកនាំនៃសាកលវិទ្យាល័យចេនឡាសូមសម្តែងនូវការអបអរសាទរចំពោះសាស្ត្រាចារ្យ បុគ្គលិក និងនិស្សិតជំនាញគិលានុបដ្ឋាក ឆ្មប និងបច្ចេកទេសមន្ទីរពិសោធន៍ ចំនួន <strong>១១១នាក់</strong> ដែលបានទទួលឱកាសដ៏មានតម្លៃក្នុងការចូលរួមដំណើរទស្សនកិច្ចសិក្សា រយៈពេល <strong>៣យប់ ៤ថ្ងៃ</strong> ដោយឥតគិតថ្លៃ ទៅកាន់សាកលវិទ្យាល័យ <strong>Tan Tao University</strong> នៃសាធារណរដ្ឋសង្គមនិយមវៀតណាម។</p>
+
+            <p>ដំណើរទស្សនកិច្ចសិក្សានេះគឺកាន់តែបង្ហាញពីការយកចិត្តទុកដាក់លើការអភិវឌ្ឍធនធានមនុស្ស និងការលើកកម្ពស់គុណភាពអប់រំក្នុងវិស័យសុខាភិបាល តាមរយៈការផ្លាស់ប្តូរចំណេះដឹង បទពិសោធន៍ និងបច្ចេកវិទ្យាទំនើប ជាពិសេសក្នុងការអនុវត្តការងារគិលានុបដ្ឋាក ឆ្មប និងបច្គេកទេសមន្ទីរពិសោធន៍ផ្ទាល់តែម្តង។</p>
+
+            <h2>គោលបំណងនៃដំណើរទស្សនកិច្ច</h2>
+            <p>តាមរយៈការទស្សនកិច្ចនេះ សាស្ត្រាចារ្យ បុគ្គលិក និងនិស្សិតនឹងទទួលបាននូវអត្ថប្រយោជន៍ជាច្រើនដូចជា៖</p>
+            <ul>
+                <li>ស្វែងយល់ពីប្រព័ន្ធអប់រំស្តង់ដារអន្តរជាតិ។</li>
+                <li>សិក្សាពីបច្ចេកទេសទំនើបក្នុងការបង្រៀន និងការអនុវត្តជាក់ស្តែងក្នុងមន្ទីរពិសោធន៍។</li>
+                <li>ពង្រីកបណ្តាញសហការរវាងសាកលវិទ្យាល័យទាំងពីរ។</li>
+                <li>ផ្លាស់ប្តូរបទពិសោធន៍វប្បធម៌ និងការរស់នៅរវាងនិស្សិតកម្ពុជា និងវៀតណាម។</li>
+            </ul>
+
+            <div class="photo-grid">
+                <div class="grid-item">
+                    <img src="image/CLU2.jpg" alt="Chenla University Study Tour">
+                </div>
+                <div class="grid-item">
+                    <img src="image/CLU3.jpg" alt="chenla university study tour">
+                </div>
+                <div class="grid-item">
+                    <img src="image/CLU4.jpg" alt="chenla university study tour">
+                </div>
+                <div class="grid-item">
+                    <img src="image/CLU5.jpg" alt="chenla university study tour">
+                </div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+            <h2>International Perspectives</h2>
+            <p>The leadership of Chenla University further demonstrates the attention to human resource development and improving the quality of education in the health sector through the exchange of knowledge and modern technology. Through this visit, participants will learn from international standard education systems and modern teaching techniques.</p>
+
+            <div class="summary-box">
+                <h3 style="margin-bottom: 10px;">ជូនពរជ័យ</h3>
+                <p style="margin-bottom: 0;">ថ្នាក់ដឹកនាំនៃសាកលវិទ្យាល័យចេនឡា សូមគោរពជូនពរដល់សាស្ត្រាចារ្យ បុគ្គលិក និងនិស្សិតទាំងអស់ ទទួលបាននូវភាពជោគជ័យ និងសុវត្ថិភាពក្នុងដំណើរបំពេញទស្សនកិច្ចដ៏មានសារសំខាន់ខាងលើនេះ។</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>© 2026 Cheng Cyber | Chenla University Partnership</footer>
+</body>
+</html>
